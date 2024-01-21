@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Model1
+from .models import Author
 
-class Model1Serializer(serializers.ModelSerializer):
+class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Model1
+        model = Author
         fields = '__all__'
