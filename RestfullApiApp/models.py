@@ -1,5 +1,10 @@
 from django.db import models
 
-class Model1(models.Model):
-    pole1 = models.CharField(max_length=100)
-    pole2 = models.IntegerField()
+class Author(models.Model):
+    name = models.CharField(max_length=100)
+    surname = models.CharField(max_length=100)
+
+class Book(models.Model):
+    title = models.CharField(max_length=100)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    year = models.IntegerField()

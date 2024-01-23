@@ -1,11 +1,11 @@
 from rest_framework import generics
-from .models import Model1
-from .serializers import Model1Serializer
+from .models import Author
+from .serializers import AuthorSerializer
 
-class Model1Lista(generics.ListCreateAPIView):
-    queryset = Model1.objects.all()
-    serializer_class = Model1Serializer
+class AuthorList(generics.ListCreateAPIView):
+    queryset = Author.objects.all()
+    serializer_class = AuthorSerializer
 
-class Model1Szczegoly(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Model1.objects.all()
-    serializer_class = Model1Serializer
+class AuthorDetails(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Author.objects.all()
+    serializer_class = AuthorSerializer
