@@ -1,5 +1,7 @@
 venv
-db.sqlite3
+./db.sqlite3
 .idea
 RestfullApiProjekt/__pycache__
 RestfullApiApp/__pycache__
+RestfullApiApp/migrations/__pycache__
+db.sqlite3
