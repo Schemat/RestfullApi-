@@ -1,0 +1,5 @@
+specyfikacja: aplikacja do zarządzania inwentarzem bibliotek gdzie można autorami i książkami poprzez operacje CRUD-owe
+projekt będzie tworzony przy pomocy designu MVT
+CI/CD - github actions, docker
+Baza danych - sq.lite3, mongo
+linter, formater
